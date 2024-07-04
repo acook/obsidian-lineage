@@ -3,7 +3,7 @@ export const level = (parentNumber: string, index: number) =>
 export const delimiter = (parentNumber: string, index: number) =>
     `\n# Section ${level(parentNumber, index)}`;
 
-const delimiterRegex = /^#\s+Section\s*((\d\.?)*(\d))[\w\s]*/;
+const delimiterRegex = /#\s+Section\s*((\d\.?)*(\d))[\w\s]*/;
 export const parseDelimiter = (line: string) => {
     const results = delimiterRegex.exec(line);
     if (results) {
