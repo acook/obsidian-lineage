@@ -51,7 +51,7 @@ test('paste node: 1', () => {
         type: 'DOCUMENT/PASTE_BRANCH',
         payload: {
             targetNodeId: 'nbhL',
-            text: '\r\n<!--section: 1-->\r\n2\r\n\r\n<!--section: 1.1-->\r\n2.1\r\n\r\n<!--section: 1.2-->\r\n2.2',
+            text: '\r\n# Section 1\r\n2\r\n\r\n# Section 1.1\r\n2.1\r\n\r\n# Section 1.2\r\n2.2',
         },
     };
     pasteNode(input, action);

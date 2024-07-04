@@ -34,7 +34,7 @@ describe('branch-to-section', () => {
             nodeId: n1,
             mode: 'copy',
         };
-        const text = `\n<!--section: 1-->\n1\n\n<!--section: 1.1-->\n1.1\n\n<!--section: 1.1.1-->\n1.1.1\n\n<!--section: 1.1.2-->\n1.1.2\n\n<!--section: 1.1.2.1-->\n1.1.2.1\n\n<!--section: 1.2-->\n1.2\n\n<!--section: 1.2.1-->\n1.2.1\n\n<!--section: 1.2.2-->\n1.2.2`;
+        const text = `\n# Section 1\n1\n\n# Section 1.1\n1.1\n\n# Section 1.1.1\n1.1.1\n\n# Section 1.1.2\n1.1.2\n\n# Section 1.1.2.1\n1.1.2.1\n\n# Section 1.2\n1.2\n\n# Section 1.2.1\n1.2.1\n\n# Section 1.2.2\n1.2.2`;
         expect(branchToSection([branch])).toEqual(text);
     });
     test('multiple branches', () => {
@@ -75,22 +75,22 @@ describe('branch-to-section', () => {
             },
         ] as ClipboardBranch[];
         const text = `
-<!--section: 1-->
+# Section 1
 1
 
-<!--section: 1.1-->
+# Section 1.1
 1.1
 
-<!--section: 1.2-->
+# Section 1.2
 1.2
 
-<!--section: 2-->
+# Section 2
 2
 
-<!--section: 2.1-->
+# Section 2.1
 2.1
 
-<!--section: 2.2-->
+# Section 2.2
 2.2`;
         expect(branchToSection(input)).toEqual(text);
     });

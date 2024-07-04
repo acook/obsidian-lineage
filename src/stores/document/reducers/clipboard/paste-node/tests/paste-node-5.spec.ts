@@ -57,7 +57,7 @@ test('paste node: pasted section number is not 1', () => {
         type: 'DOCUMENT/PASTE_NODE',
         payload: {
             targetNodeId: 'nOPWxtPQA',
-            text: '<!--section: 2-->\n2\n\n<!--section: 2.1-->\n2.1\n\n<!--section: 2.2-->\n2.2',
+            text: '# Section 2\n2\n\n# Section 2.1\n2.1\n\n# Section 2.2\n2.2',
         },
     };
 

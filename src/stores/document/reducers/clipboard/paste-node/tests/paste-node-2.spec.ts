@@ -117,7 +117,7 @@ test('paste node: 2', () => {
         type: 'DOCUMENT/PASTE_BRANCH',
         payload: {
             targetNodeId: 'nNeo',
-            text: '\r\n<!--section: 1-->\r\n2\r\n\r\n<!--section: 1.1-->\r\n2.1\r\n\r\n<!--section: 1.1.1-->\r\n2.1.1\r\n\r\n<!--section: 1.1.2-->\r\n2.1.2\r\n\r\n<!--section: 1.1.3-->\r\n2.1.3\r\n\r\n<!--section: 1.2-->\r\n2.2\r\n\r\n<!--section: 1.2.1-->\r\n2.2.1\r\n\r\n<!--section: 1.2.2-->\r\n2.2.2\r\n\r\n<!--section: 1.2.3-->\r\n2.2.3',
+            text: '\r\n# Section 1\r\n2\r\n\r\n# Section 1.1\r\n2.1\r\n\r\n# Section 1.1.1\r\n2.1.1\r\n\r\n# Section 1.1.2\r\n2.1.2\r\n\r\n# Section 1.1.3\r\n2.1.3\r\n\r\n# Section 1.2\r\n2.2\r\n\r\n# Section 1.2.1\r\n2.2.1\r\n\r\n# Section 1.2.2\r\n2.2.2\r\n\r\n# Section 1.2.3\r\n2.2.3',
         },
     };
     pasteNode(input, action);

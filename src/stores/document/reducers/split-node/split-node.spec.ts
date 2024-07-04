@@ -340,7 +340,7 @@ describe('split node', () => {
                 },
             ],
             content: {
-                nVPwysBOU: { content: '# 1\n## 1.1\n<!-- section: 1-->\n' },
+                nVPwysBOU: { content: '# 1\n## 1.1\n# Section 1\n' },
             },
         };
 

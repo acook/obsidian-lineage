@@ -8,7 +8,7 @@ describe('detectDocumentFormat', () => {
             'key: value',
             '---',
             'text',
-            '<!--section: 1-->',
+            '# Section 1',
             'text',
         ].join('\n');
 
@@ -55,7 +55,7 @@ describe('detectDocumentFormat', () => {
             'key: value',
             '---',
             '- item 1',
-            '<!--section: 1-->',
+            '# Section 1',
             'text',
         ].join('\n');
 

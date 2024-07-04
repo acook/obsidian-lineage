@@ -98,31 +98,31 @@ describe('headingsToSections', () => {
 ...
 `;
         const output = `
-<!--section: 1-->
+# Section 1
 # 1
 ...
 
-<!--section: 1.1-->
+# Section 1.1
 ## 1.1
 ...
 ...
 
-<!--section: 1.1.1-->
+# Section 1.1.1
 ### 1.1.1
 ...
 
-<!--section: 1.1.1.1-->
+# Section 1.1.1.1
 #### 1.1.1.1
 ...
 ...
 ...
 
-<!--section: 1.1.1.1.1-->
+# Section 1.1.1.1.1
 ##### 1.1.1.1.1
 ...
 ...
 
-<!--section: 1.2-->
+# Section 1.2
 ## 1.2
 ...
 ...
@@ -131,119 +131,119 @@ describe('headingsToSections', () => {
 ...
 ...
 
-<!--section: 1.2.1-->
+# Section 1.2.1
 ### 1.2.1
 ...
 ...
 
-<!--section: 1.2.1.1-->
+# Section 1.2.1.1
 #### 1.2.1.1
 ...
 ...
 ...
 ...
 
-<!--section: 1.2.2-->
+# Section 1.2.2
 ### 1.2.2
 ...
 ...
 
-<!--section: 1.3-->
+# Section 1.3
 ## 1.3
 ...
 ...
 ...
 ...
 
-<!--section: 2-->
+# Section 2
 # 2
 ...
 ...
 
-<!--section: 2.1-->
+# Section 2.1
 ## 2.1
 
-<!--section: 2.1.1-->
+# Section 2.1.1
 ### 2.1.1
 ...
 ...
 
-<!--section: 2.1.1.1-->
+# Section 2.1.1.1
 #### 2.1.1.1
 ...
 ...
 
-<!--section: 2.1.2-->
+# Section 2.1.2
 ### 2.1.2
 ...
 ...
 
-<!--section: 2.2-->
+# Section 2.2
 ## 2.2
 ...
 ...
 
-<!--section: 2.2.1-->
+# Section 2.2.1
 ### 2.2.1
 ...
 ...
 
-<!--section: 2.2.1.1-->
+# Section 2.2.1.1
 #### 2.2.1.1
 ...
 ...
 
-<!--section: 2.2.1.1.1-->
+# Section 2.2.1.1.1
 ##### 2.2.1.1.1
 ...
 ...
 
-<!--section: 3-->
+# Section 3
 # 3
 ...
 ...
 
-<!--section: 3.1-->
+# Section 3.1
 ## 3.1
 ...
 ...
 
-<!--section: 3.1.1-->
+# Section 3.1.1
 ### 3.1.1
 ...
 ...
 
-<!--section: 3.1.1.1-->
+# Section 3.1.1.1
 #### 3.1.1.1
 ...
 ...
 
-<!--section: 3.1.2-->
+# Section 3.1.2
 ### 3.1.2
 ...
 ...
 
-<!--section: 3.2-->
+# Section 3.2
 ## 3.2
 ...
 ...
 
-<!--section: 3.2.1-->
+# Section 3.2.1
 ### 3.2.1
 ...
 ...
 
-<!--section: 3.2.1.1-->
+# Section 3.2.1.1
 #### 3.2.1.1
 ...
 ...
 
-<!--section: 3.2.2-->
+# Section 3.2.2
 ### 3.2.2
 ...
 ...
 
-<!--section: 3.3-->
+# Section 3.3
 ## 3.3
 ...
 ...
@@ -277,41 +277,41 @@ describe('headingsToSections', () => {
 `;
 
         const output = `
-<!--section: 1-->
+# Section 1
 ...
 ...
 
 ...        
 
-<!--section: 2-->
+# Section 2
 # 1
 ...
 
-<!--section: 2.1-->
+# Section 2.1
 ## 1.1
 ...
 ...
 
-<!--section: 2.1.1-->
+# Section 2.1.1
 ### 1.1.1
 ...
 
-<!--section: 2.1.1.1-->
+# Section 2.1.1.1
 #### 1.1.1.1
 ...
 ...
 ...
 
-<!--section: 2.1.1.1.1-->
+# Section 2.1.1.1.1
 ##### 1.1.1.1.1
 ...
 ...
 
-<!--section: 2.2-->
+# Section 2.2
 ## 1.2
 ...
 
-<!--section: 3-->
+# Section 3
 # 2
 ...
 `;
@@ -325,7 +325,7 @@ describe('headingsToSections', () => {
 ## 1.1
 ...
 ...
-<!--section: 1-->
+# Section 1
 ### 1.1.1`;
         expect(() => headingsToSections(input)).toThrow('input has a section');
     });
@@ -526,289 +526,289 @@ describe('headingsToSections', () => {
 ..`;
 
         const output = `
-<!--section: 1-->
+# Section 1
 # 1
 ..
 ..
 ..
 
 
-<!--section: 1.1-->
+# Section 1.1
 ## 1.1
 ..
 ..
 ..
 
 
-<!--section: 1.2-->
+# Section 1.2
 ## 1.2
 ..
 ..
 
 
-<!--section: 1.2.1-->
+# Section 1.2.1
 ### 1.2.1
 ..
 ..
 
 
-<!--section: 1.3-->
+# Section 1.3
 ## 1.3
 ..
 ..
 
 
-<!--section: 1.3.1-->
+# Section 1.3.1
 ### 1.3.1
 ..
 ..
 
 
-<!--section: 1.3.2-->
+# Section 1.3.2
 ### 1.3.2
 ..
 ..
 
 
-<!--section: 1.3.2.1-->
+# Section 1.3.2.1
 #### 1.3.2.1
 ..
 ..
 
 
-<!--section: 1.3.2.2-->
+# Section 1.3.2.2
 #### 1.3.2.2
 ..
 ..
 
 
-<!--section: 1.3.2.2.1-->
+# Section 1.3.2.2.1
 ##### 1.3.2.2.1
 ..
 ..
 
 
-<!--section: 1.3.2.2.2-->
+# Section 1.3.2.2.2
 ##### 1.3.2.2.2
 ..
 ..
 
 
-<!--section: 2-->
+# Section 2
 # 2
 ..
 ..
 ..
 
 
-<!--section: 2.1-->
+# Section 2.1
 ## 2.1
 ..
 ..
 
 
-<!--section: 2.2-->
+# Section 2.2
 ## 2.2
 ..
 ..
 
 
-<!--section: 2.2.1-->
+# Section 2.2.1
 ### 2.2.1
 ..
 ..
 
 
-<!--section: 2.2.2-->
+# Section 2.2.2
 ### 2.2.2
 ..
 ..
 
 
-<!--section: 2.2.2.1-->
+# Section 2.2.2.1
 #### 2.2.2.1
 ..
 ..
 
 
-<!--section: 2.2.2.2-->
+# Section 2.2.2.2
 #### 2.2.2.2
 ..
 ..
 
 
-<!--section: 2.2.2.2.1-->
+# Section 2.2.2.2.1
 ##### 2.2.2.2.1
 ..
 ..
 
 
-<!--section: 2.2.2.2.2-->
+# Section 2.2.2.2.2
 ##### 2.2.2.2.2
 ..
 ..
 
 
-<!--section: 3-->
+# Section 3
 # 3
 ..
 ..
 ..
 
 
-<!--section: 3.1-->
+# Section 3.1
 ## 3.1
 ..
 ..
 
 
-<!--section: 3.2-->
+# Section 3.2
 ## 3.2
 ..
 ..
 
 
-<!--section: 3.2.1-->
+# Section 3.2.1
 ### 3.2.1
 ..
 ..
 
 
-<!--section: 3.2.2-->
+# Section 3.2.2
 ### 3.2.2
 ..
 ..
 
 
-<!--section: 3.2.2.1-->
+# Section 3.2.2.1
 #### 3.2.2.1
 ..
 ..
 
 
-<!--section: 3.2.2.2-->
+# Section 3.2.2.2
 #### 3.2.2.2
 ..
 ..
 
 
-<!--section: 3.2.2.2.1-->
+# Section 3.2.2.2.1
 ##### 3.2.2.2.1
 ..
 ..
 
 
-<!--section: 3.2.2.2.2-->
+# Section 3.2.2.2.2
 ##### 3.2.2.2.2
 ..
 ..
 
 
-<!--section: 4-->
+# Section 4
 # 4
 ..
 ..
 ..
 
 
-<!--section: 4.1-->
+# Section 4.1
 ## 4.1
 ..
 ..
 
 
-<!--section: 4.2-->
+# Section 4.2
 ## 4.2
 ..
 ..
 
 
-<!--section: 4.2.1-->
+# Section 4.2.1
 ### 4.2.1
 ..
 ..
 
 
-<!--section: 4.2.2-->
+# Section 4.2.2
 ### 4.2.2
 ..
 ..
 
 
-<!--section: 4.2.2.1-->
+# Section 4.2.2.1
 #### 4.2.2.1
 ..
 ..
 
 
-<!--section: 4.2.2.2-->
+# Section 4.2.2.2
 #### 4.2.2.2
 ..
 ..
 
 
-<!--section: 4.2.2.2.1-->
+# Section 4.2.2.2.1
 ##### 4.2.2.2.1
 ..
 ..
 
 
-<!--section: 4.2.2.2.2-->
+# Section 4.2.2.2.2
 ##### 4.2.2.2.2
 ..
 ..
 
 
-<!--section: 5-->
+# Section 5
 # 5
 ..
 ..
 ..
 
 
-<!--section: 5.1-->
+# Section 5.1
 ## 5.1
 ..
 ..
 
 
-<!--section: 5.2-->
+# Section 5.2
 ## 5.2
 ..
 ..
 
 
-<!--section: 5.2.1-->
+# Section 5.2.1
 ### 5.2.1
 ..
 ..
 
 
-<!--section: 5.2.2-->
+# Section 5.2.2
 ### 5.2.2
 ..
 ..
 
 
-<!--section: 5.2.2.1-->
+# Section 5.2.2.1
 #### 5.2.2.1
 ..
 ..
 
 
-<!--section: 5.2.2.2-->
+# Section 5.2.2.2
 #### 5.2.2.2
 ..
 ..
 
 
-<!--section: 5.2.2.2.1-->
+# Section 5.2.2.2.1
 ##### 5.2.2.2.1
 ..
 ..
 
 
-<!--section: 5.2.2.2.2-->
+# Section 5.2.2.2.2
 ##### 5.2.2.2.2
 ..
 ..`;
@@ -829,19 +829,19 @@ describe('headingsToSections', () => {
 
         const output = [
             '',
-            '<!--section: 1-->',
+            '# Section 1',
             '### 1',
             '...',
             '',
-            '<!--section: 1.1-->',
+            '# Section 1.1',
             '#### 1.1',
             '...',
             '',
-            '<!--section: 2-->',
+            '# Section 2',
             '### 2',
             '...',
             '',
-            '<!--section: 2.1-->',
+            '# Section 2.1',
             '#### 2.1',
             '...',
         ].join('\n');
@@ -855,16 +855,16 @@ describe('headingsToSections', () => {
 ## H2`;
 
         const output = `
-<!--section: 1-->
+# Section 1
 ## H3
 
-<!--section: 1.1-->
+# Section 1.1
 ### H6 
 
-<!--section: 1.2-->
+# Section 1.2
 ### H4
 
-<!--section: 2-->
+# Section 2
 ## H2`;
         expect(headingsToSections(input)).toEqual(output);
     });
@@ -882,18 +882,18 @@ text 2
 text 3`;
 
         const output = `
-<!--section: 1-->
+# Section 1
 ## H2
 
 text 1
 
-<!--section: 1.1-->
+# Section 1.1
 ### H4
 
 
 text 2
 
-<!--section: 1.2-->
+# Section 1.2
 ### H3
 
 text 3`;
@@ -916,22 +916,22 @@ text 2
 - item 2
 - item 3`;
         const output = `
-<!--section: 1-->
+# Section 1
 ## H2
 
 
-<!--section: 1.1-->
+# Section 1.1
 ### H3
 
 text 1
 
 
-<!--section: 1.2-->
+# Section 1.2
 ### H3
 
 text 2
 
-<!--section: 1.2.1-->
+# Section 1.2.1
 #### H4
 
 - item 1.

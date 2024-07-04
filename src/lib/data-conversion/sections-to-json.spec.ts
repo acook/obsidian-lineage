@@ -33,19 +33,19 @@ describe('sections to json', () => {
     });
 
     it('case 2', () => {
-        const input = `<!--section: 1-->
+        const input = `# Section 1
 
 
-<!--section: 2-->
+# Section 2
 
 
-<!--section: 2.1-->
+# Section 2.1
 
 
-<!--section: 2.2-->
+# Section 2.2
 
 
-<!--section: 2.3-->`;
+# Section 2.3`;
 
         const output = [
             { content: '', children: [] },
@@ -73,26 +73,26 @@ describe('sections to json', () => {
             { content: 'text 2', children: [] },
         ];
         const actual = sectionsToJson(
-            [`text 1`, `<!--section: 1-->`, 'text 2'].join('\n'),
+            [`text 1`, `# Section 1`, 'text 2'].join('\n'),
         );
 
         expect(actual).toEqual(output);
     });
     it('bug 24-02-28', () => {
         const input = `
-<!--section: 1-->
+# Section 1
 text 1
 
-<!--section: 1.1-->
+# Section 1.1
 text 2
 
-<!--section: 1.1.1-->
+# Section 1.1.1
 text 3
 
-<!--section: 1.2-->
+# Section 1.2
 text 6
 
-<!--section: 2-->
+# Section 2
 text 7`;
         const output = [
             {

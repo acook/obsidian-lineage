@@ -436,7 +436,7 @@ const json = [
     },
 ];
 
-const annotatedMd = `<!--section: 1-->
+const annotatedMd = `# Section 1
 # Title: **Statement** of your core result or finding.
 Try to make your title an assertive statement, such as:
 - "Changes in cytoplasmic volume are sufficient to drive spindle scaling." 
@@ -448,7 +448,7 @@ Rule of thumb: if your title would look weird with a period at the end, it is pr
 
 Don't do [this](http://www.phdcomics.com/comics/archive/phd053106s.gif).
 
-<!--section: 1.1-->
+# Section 1.1
 # Abstract
 Try to tell a *story* here, no matter what your field. You are writing for human beings, not computers. What's the area, what's the problem you are trying to understand. How? What have you found?
 
@@ -462,7 +462,7 @@ Try to tell a *story* here, no matter what your field. You are writing for human
 
 ###### (This is a word count footer. We don't have automatic word counts yet, so I use is [this Chrome extension](https://chrome.google.com/webstore/detail/word-count/pnngehidikgomgfjbpffonkeimgbpjlh))
 
-<!--section: 1.1.1-->
+# Section 1.1.1
 ## Introduction - "The Setup"
 ### [In field X, we still don't understand Y & Z.]
 
@@ -472,89 +472,89 @@ Also, answer the harsh but important question: *Who cares*?
 
 In writing this, you can start general, but make sure clearly define the "before" state of the world's knowledge for the *specific area* this paper is addressing.
 
-<!--section: 1.1.1.1-->
+# Section 1.1.1.1
 ### Intro - Assertive Statement 1
 
 Here you can expand on your introduction. To guide your writing, title this card with assertive statements:
 Instead of "Problem Description", be direct: "The problem is that X doesn't do Y."
 
-<!--section: 1.1.1.1.1-->
+# Section 1.1.1.1.1
 # Introduction
 
-<!--section: 1.1.1.1.2-->
+# Section 1.1.1.1.2
 [You can write your actual paper here in this column. Then choosing "Export column 5" to Word or Markdown will help you move it to your final platform.]
 
-<!--section: 1.1.1.1.2.1-->
+# Section 1.1.1.1.2.1
 You can keep notes & comments here.
 
-<!--section: 1.1.1.1.3-->
+# Section 1.1.1.1.3
 ...
 
-<!--section: 1.1.1.1.4-->
+# Section 1.1.1.1.4
 ...
 
-<!--section: 1.1.1.2-->
+# Section 1.1.1.2
 ### Intro - Assertive Statement 2
 
-<!--section: 1.1.1.2.1-->
+# Section 1.1.1.2.1
 ...
 
-<!--section: 1.1.1.2.2-->
+# Section 1.1.1.2.2
 ...
 
-<!--section: 1.1.1.3-->
+# Section 1.1.1.3
 ### Intro - Assertive Statement 3
 
-<!--section: 1.1.1.3.1-->
+# Section 1.1.1.3.1
 ...
 
-<!--section: 1.1.1.3.2-->
+# Section 1.1.1.3.2
 ...
 
-<!--section: 1.1.2-->
+# Section 1.1.2
 ## Materials & Methods - "The Characters"
 ### [We have here method A, B, and our new method C.]
 You have established the core question(s) of your research. Now introduce the tools you are going to  use to understand it.
 
-<!--section: 1.1.2.1-->
+# Section 1.1.2.1
 ## Method A
 More details on the method, experiment design, etc.
 
 Remember that these are cards, so you can drag and drop them to rearrange if necessary.
 
-<!--section: 1.1.2.1.1-->
+# Section 1.1.2.1.1
 # Methods
 
-<!--section: 1.1.2.1.2-->
+# Section 1.1.2.1.2
 ### Method A
 
-<!--section: 1.1.2.1.2.1-->
+# Section 1.1.2.1.2.1
 Some other note. For example:
 
 #Xusheng , make sure you include the voltage you used."
 
 (the # syntax makes it easier to search for & filter comments directed at a specific person).
 
-<!--section: 1.1.2.1.3-->
+# Section 1.1.2.1.3
 ...
 
-<!--section: 1.1.2.1.4-->
+# Section 1.1.2.1.4
 ...
 
-<!--section: 1.1.2.2-->
+# Section 1.1.2.2
 ## Method B
 More details on the method, experiment design, etc.
 
-<!--section: 1.1.2.2.1-->
+# Section 1.1.2.2.1
 ### Method B...
 
-<!--section: 1.1.2.2.2-->
+# Section 1.1.2.2.2
 ...
 
-<!--section: 1.1.2.2.3-->
+# Section 1.1.2.2.3
 ...
 
-<!--section: 1.1.2.3-->
+# Section 1.1.2.3
 ## Method C
 More details on the method, experiment design, etc.
 
@@ -563,16 +563,16 @@ If you need a checklist to make sure you address all points, go ahead:
 [ ] What temperature?
 [ ] For how long?
 
-<!--section: 1.1.2.3.1-->
+# Section 1.1.2.3.1
 ### Method C
 
-<!--section: 1.1.2.3.2-->
+# Section 1.1.2.3.2
 ...
 
-<!--section: 1.1.2.3.3-->
+# Section 1.1.2.3.3
 ...
 
-<!--section: 1.1.3-->
+# Section 1.1.3
 ## Results
 What happened (objectively)?
 
@@ -580,61 +580,61 @@ Do not interpret, simply state the facts.
 
 Let's be honest: the first thing most of us do when skimming a paper is look at the figures. If your key results can be presented in figures, then start with that, and structure your paper around that.
 
-<!--section: 1.1.3.1-->
+# Section 1.1.3.1
 ## Key Result
 You can add figures if you'd like:
 
 ![](https://dl.dropboxusercontent.com/s/gieldum0s47m25v/1-plot.jpg)
 
-<!--section: 1.1.3.1.1-->
+# Section 1.1.3.1.1
 # Results
 
-<!--section: 1.1.3.1.2-->
+# Section 1.1.3.1.2
 Final text for results goes here
 
-<!--section: 1.1.3.1.3-->
+# Section 1.1.3.1.3
 ...
 
-<!--section: 1.1.3.1.4-->
+# Section 1.1.3.1.4
 ...
 
-<!--section: 1.1.3.2-->
+# Section 1.1.3.2
 Remember these are **cards** so you can rearrange your results at will.
 Any subcards will follow.
 
-<!--section: 1.1.3.2.1-->
+# Section 1.1.3.2.1
 Other results
 
-<!--section: 1.1.4-->
+# Section 1.1.4
 ## Discussion
 Results are objective, but science isn't about listing data, it's about extracting meaning from what we observe.
 
 What do your results tell you about the core problem you were investigating?
 
-<!--section: 1.1.5-->
+# Section 1.1.5
 ## Conclusion
 Bring it back to the big picture. How do your results fit into the current body of knowledge?
 
 Most importantly, how can these results help you [ask better questions](http://www.youtube.com/watch?v=nq0_zGzSc8g#t=493)?
 
-<!--section: 1.1.5.1-->
+# Section 1.1.5.1
 ## Conclusion (further detail)
 
 Expand on your conclusion summary, and add more details to it.
 
-<!--section: 1.1.5.1.1-->
+# Section 1.1.5.1.1
 # Conclusion
 
-<!--section: 1.1.5.1.2-->
+# Section 1.1.5.1.2
 Final text for conclusion goes here
 
-<!--section: 1.1.5.1.3-->
+# Section 1.1.5.1.3
 in as many
 
-<!--section: 1.1.5.1.4-->
+# Section 1.1.5.1.4
 cards as you like.
 
-<!--section: 1.1.6-->
+# Section 1.1.6
 ## References
 We don't have bibliography support yet, but we do have "named links" so you can refer to specific links by name rather than retyping it each time.
 
@@ -643,7 +643,7 @@ We don't have bibliography support yet, but we do have "named links" so you can 
 [prl2010]: http://arxiv.org/abs/1311.3007
 [dnaRef]: http://biorxiv.org/content/early/2013/11/07/000026
 
-<!--section: 1.1.6.1-->
+# Section 1.1.6.1
 ## List
 Or you can simply list your references here:
 
@@ -651,19 +651,19 @@ Or you can simply list your references here:
 1. some other ref. Numbering fixes itself automatically.
 2. A third ref.
 
-<!--section: 1.1.6.1.1-->
+# Section 1.1.6.1.1
 # References
 
-<!--section: 1.1.6.1.2-->
+# Section 1.1.6.1.2
 Some reference by J. Doe
 
-<!--section: 1.1.6.1.2.1-->
+# Section 1.1.6.1.2.1
 Notes on this reference. 
 
-<!--section: 1.1.6.1.3-->
+# Section 1.1.6.1.3
 Some other reference
 
-<!--section: 1.2-->
+# Section 1.2
 ## How to use this template
 The idea here is to start at the far left, and clarify what the core of what you want to say is *first*, and then expand on it by moving to the right, one column at a time.
 

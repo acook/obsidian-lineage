@@ -175,7 +175,7 @@ test('paste node: 3', () => {
         type: 'DOCUMENT/PASTE_BRANCH',
         payload: {
             targetNodeId: 'nT_HAScRm',
-            text: '\r\n<!--section: 1-->\r\n3\r\n\r\n<!--section: 1.1-->\r\n3.1\r\n\r\n<!--section: 1.1.1-->\r\n3.1.1\r\n\r\n<!--section: 1.1.2-->\r\n3.1.2\r\n\r\n<!--section: 1.1.3-->\r\n3.1.3\r\n\r\n<!--section: 1.1.3.1-->\r\n3.1.3.1\r\n\r\n<!--section: 1.1.3.2-->\r\n3.1.3.2\r\n\r\n<!--section: 1.1.3.2.1-->\r\n3.1.3.2.1\r\n\r\n<!--section: 1.1.3.2.2-->\r\n3.1.3.2.2\r\n\r\n<!--section: 1.1.3.2.3-->\r\n3.1.3.2.3\r\n\r\n<!--section: 1.1.3.2.4-->\r\n3.1.3.2.4\r\n\r\n<!--section: 1.2-->\r\n3.2',
+            text: '\r\n# Section 1\r\n3\r\n\r\n# Section 1.1\r\n3.1\r\n\r\n# Section 1.1.1\r\n3.1.1\r\n\r\n# Section 1.1.2\r\n3.1.2\r\n\r\n# Section 1.1.3\r\n3.1.3\r\n\r\n# Section 1.1.3.1\r\n3.1.3.1\r\n\r\n# Section 1.1.3.2\r\n3.1.3.2\r\n\r\n# Section 1.1.3.2.1\r\n3.1.3.2.1\r\n\r\n# Section 1.1.3.2.2\r\n3.1.3.2.2\r\n\r\n# Section 1.1.3.2.3\r\n3.1.3.2.3\r\n\r\n# Section 1.1.3.2.4\r\n3.1.3.2.4\r\n\r\n# Section 1.2\r\n3.2',
         },
     };
     pasteNode(input, action);

@@ -42,7 +42,7 @@ test('paste node: order of root nodes', () => {
         type: 'DOCUMENT/PASTE_NODE',
         payload: {
             targetNodeId: 'nNV0rOET2',
-            text: '\n<!--section: 2-->\n1\n\n<!--section: 2.1-->\n1.1\n\n<!--section: 2.2-->\n1.2\n\n<!--section: 3-->\n2\n\n<!--section: 3.1-->\n2.1\n\n<!--section: 3.2-->\n2.2\n\n<!--section: 4-->\n3\n\n<!--section: 4.1-->\n3.1\n\n<!--section: 4.2-->\n3.2',
+            text: '\n# Section 2\n1\n\n# Section 2.1\n1.1\n\n# Section 2.2\n1.2\n\n# Section 3\n2\n\n# Section 3.1\n2.1\n\n# Section 3.2\n2.2\n\n# Section 4\n3\n\n# Section 4.1\n3.1\n\n# Section 4.2\n3.2',
         },
     };
 

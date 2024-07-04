@@ -13,7 +13,7 @@ describe('outline-to-sections', () => {
         const input = [
             '- 1',
             '\t- 1.1',
-            '<!--section: 1.2-->',
+            '# Section 1.2',
             '\t\t- 1.2',
             '- 2',
             '- 3',
