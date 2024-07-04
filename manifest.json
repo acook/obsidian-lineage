@@ -1,9 +1,9 @@
 {
-	"id": "lineage",
-	"name": "Lineage",
+	"id": "lineage-headings",
+	"name": "Lineage for Headings",
 	"version": "0.6.1",
 	"minAppVersion": "0.15.0",
-	"description": "Edit Markdown in a keyboard-centric Miller columns interface. Inspired by Gingko Writer.",
+	"description": "Edit Markdown in a keyboard-centric Miller columns interface. Inspired by Gingko Writer. Fork of Lineage which supports headings instead of HTML comments.",
 	"author": "ycnmhd",
 	"isDesktopOnly": false
 }
