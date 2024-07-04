@@ -1,9 +1,9 @@
 export const level = (parentNumber: string, index: number) =>
     `${parentNumber ? parentNumber + '.' : ''}${index}`;
 export const delimiter = (parentNumber: string, index: number) =>
-    `\n<!--section: ${level(parentNumber, index)}-->`;
+    `\n# Section ${level(parentNumber, index)}`;
 
-const delimiterRegex = /\s*<!--\s*section:\s*((\d\.?)*(\d))[\w\s]*-->/;
+const delimiterRegex = /^#\s+Section\s*((\d\.?)*(\d))[\w\s]*/;
 export const parseDelimiter = (line: string) => {
     const results = delimiterRegex.exec(line);
     if (results) {
