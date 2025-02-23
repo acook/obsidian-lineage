@@ -1,6 +1,6 @@
 {
-	"id": "lineage",
-	"name": "Lineage",
+	"id": "lineage-headings",
+	"name": "Lineage with Headings",
 	"version": "0.8.3",
 	"minAppVersion": "0.15.0",
 	"description": "Edit Markdown in a keyboard-centric Miller columns interface. Inspired by Gingko Writer.",
